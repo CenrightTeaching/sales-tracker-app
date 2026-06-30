@@ -10,6 +10,9 @@ workflows:
         - push
         - pull_request
     scripts:
+      - name: Remove corrupted lock file
+        script: |
+          rm -f pubspec.lock
       - name: Get Flutter packages
         script: |
           flutter pub get
