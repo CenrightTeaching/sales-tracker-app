@@ -28,4 +28,4 @@ workflows:
     publishing:
       email:
         recipients:
-          - $PERSONAL_EMAIL
+          - courtney.enright@icloud.com
