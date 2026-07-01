@@ -13,6 +13,10 @@ workflows:
       - name: Remove corrupted lock file
         script: |
           rm -f pubspec.lock
+      - name: Regenerate Android project
+        script: |
+          rm -rf android
+          flutter create --platforms=android .
       - name: Get Flutter packages
         script: |
           flutter pub get
